@@ -1,0 +1,497 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar-content{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    box-shadow: 2px 2px 3px gainsboro;
+    padding: 20px;
+    justify-content: space-between;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+.navlink ul li{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin-right: 25px;
+    transform: translateY(-19%);
+}
+.navlink ul li a{
+    text-decoration: none;
+    color: black;
+    transition: 1s;
+}
+.navlink ul li a:hover{
+    color: rgb(48, 8, 227);
+}
+.nav-btn a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgb(79, 16, 155);
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-image: linear-gradient(45deg,rgb(146, 7, 151),rgb(48, 8, 227));
+    color: white;
+    cursor: pointer;
+}
+.nav-btn{
+    transform: translateX(-30%);
+    transform: translateY(20%);
+}
+
+.whole-home-content{
+    transform: translateY(40%);
+    display: flex;
+    justify-content: space-evenly;
+}
+.home-one{
+    transform: translateY(15%);
+}
+.home-para-content h1{
+    font-size:3rem;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+.home-para-content span{
+    font-size: 4rem;
+    color: rgb(59, 31, 182);
+    font-weight: 200;
+}
+.home-para-content p {
+    color: rgb(123, 117, 117);
+}
+.home-btn a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgb(79, 16, 155);
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-image: linear-gradient(45deg,rgb(18, 152, 219),rgb(48, 8, 227));
+    color: white;
+    cursor: pointer;
+    box-shadow: 5px 10px 9px 5px gainsboro;
+}
+.home-btn{
+    transform: translateY(65%);
+    margin-top: 35px;
+}
+.crocel-home-content{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.crocel-content{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    flex-wrap: wrap;
+}
+.crosel-whole-content{
+    transform: translateY(80%);
+}
+.crosel-whole-content h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.crocel-item h3{
+    margin-bottom: 10px;
+    color: rgb(29, 29, 57);
+    transition: 1s;
+}
+.crocel-item h3:hover{
+    color: rgb(157, 7, 32);
+}
+.crocel-item p{
+    color: rgb(71, 68, 68);
+}
+.crocel-item{
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    box-shadow: 5px 9px 10px 5px gainsboro;
+    transition: 1s;
+}
+.crocel-item:hover{
+    border: 2px solid  rgb(157, 7, 32);
+}
+.fa-code{
+    color: rgb(255, 100, 65);
+    border: 1px solid  rgb(255, 100, 65);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.fa-code-branch{
+    color: rgb(28, 251, 199);
+    border: 1px solid  rgb(28, 251, 199);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.fa-magnifying-glass{
+    color: rgb(17, 122, 250);
+    border: 1px solid  rgb(17, 122, 250);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.fa-server{
+    color: rgb(33, 35, 47);
+    border: 1px solid rgb(33, 35, 47);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.fa-database{
+    color: rgb(22, 57, 255);
+    border: 1px solid  rgb(22, 57, 255);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.fa-box{
+    color: rgb(255, 170, 22);
+    border: 1px solid  rgb(255, 170, 22);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.crocel-home-intro{
+    transform: translateY(100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.crocel-whole-intro{
+    position: relative;
+    width: 1100px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    background-color: #fff;
+}
+.crocel-intro{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.crocel-item-intro{
+    min-width: 100%;
+    padding: 20px;
+    transform: translateX(1%);
+    margin:20px;
+    box-sizing: border-box;
+}
+.prev, .next {
+    position: absolute;
+    transform: translateY(-50%);
+    background-color: rgb(157, 7, 32);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.prev {
+    left: 10px;
+   margin-left: 90%;
+}
+
+.next {
+    right: 10px;
+    margin-right: 10%;
+}
+
+button:focus {
+    outline:none;
+}
+.crocel-item-intro{
+    display: flex;
+    flex-direction: row;
+}
+.crocel-item-intro span{
+    font-weight: 100;
+}
+.crocel-item-intro .crocel-para{
+    margin-right: 30px;
+}
+video{
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.crocel-para h2{
+    margin-bottom: 20px;
+}
+.crocel-para p span{
+    color:  rgb(157, 7, 32);
+}
+.crocel-para p{
+    line-height: 23px;
+    margin-bottom: 90px;
+}
+.crocel-para a{
+    text-decoration: none;
+    color: rgb(255, 248, 248);
+    border: 1px solid rgb(79, 16, 155);
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-image: linear-gradient(45deg,rgb(146, 7, 151),rgb(48, 8, 227));
+}
+.marquee-content{
+    transform: translateY(380%);
+    
+}
+.marquee-img img{
+    width: 130px;
+    margin-left: 70px;
+}
+.info-home-content{
+    transform: translateY(70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.techinfo-home{
+    transform: translateY(75%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.design-home{
+    transform: translateY(165%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.filter-home-content{
+    transform: translateY(240%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.point-home-content{
+    transform: translateY(220%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mar-inner{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+.mar-home-content{
+    transform: translateY(360%);
+}
+footer{
+    transform: translateY(340%);
+    padding: 40px;
+}
+.end-content{
+    transform: translateY(40%);
+}
+#crucel-two{
+    transform: translateX(-3%);
+}
+#crucel-one{
+    transform: translateX(-5%);
+}
+#crucel-three{
+    transform: translateX(-10%);
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+    .logo h2{
+        font-size: 17px;
+        transform: translateY(25%);
+    }
+    .navlink{
+        font-size: 14px;
+        transform: translateX(3%);
+    }
+    .home-two img {
+        z-index: 0;
+       transform: translateY(150%);
+        width: 350px;
+        margin-right: 40px;
+        margin-bottom: 40px;
+    }
+    .home-one{
+        transform: translateX(20%);
+        z-index: 1;
+    }
+    .crocel-home-content{
+        transform: translateY(-22%);
+    }
+    .crocel-home-intro{
+        width: 830px;
+        padding: 20px;
+    }
+    .crocel-item-intro{
+        transform: translateX(-3%);
+    }
+    #crucel-two{
+        transform: translateX(-7%);
+    }
+    #crucel-one{
+        transform: translateX(-12%);
+    }
+    #crucel-three{
+        transform: translateX(-17%);
+    }
+    .crocel-home-intro{
+        margin-bottom: 20px;
+    }
+    .another-crocel{
+        margin-right: 40px;
+        margin-top: 100px;
+    }
+    .info-para{
+        font-size: 11px;
+        transform: translateX(-10%);
+    }
+    .techinfo-para{
+        font-size: 12px;
+    }
+    .filter-home-content{
+        transform: translateY(258%);
+    }
+    .design-home{
+        font-size: 12px;
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .point-home-content{
+        font-size: 12px;
+        transform: translateY(275%);
+    }
+    .mar-home-content{
+        margin-top:70px;
+    }
+    .end-para{
+        display: none;
+    }
+    .end-btn{
+        display: none;
+    }
+    #end-point{
+        display: none;
+    }
+}
+
+@media(max-width: 700px){
+    .navlink{
+        display: none;
+    }
+    .home-one{
+        transform: translateX(25%);
+        margin-left: 30px;
+        transform: translateY(15%);
+    }
+    .home-two img{
+        display: none;
+    }
+
+    .crocel-home-content{
+        transform: translateY(-38%);
+    }
+    .crocel-para{
+        font-size: 11px;
+    }
+    .crocel-item-intro{
+        display: flex;
+        flex-direction: column;
+    }
+    video{
+        width: 370px;
+        margin-top: 30px;
+    }
+    .marquee-content{
+        transform: translateY(430%);
+    }
+    .another-crocel{
+        margin-top: 90px;
+        font-size: 13px;
+        margin: 20px;
+    }
+    .image-icon-crocel{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+    .another-para-crocel{
+        font-size: 16px;
+    }
+    .info-para{
+        font-size: 13px;
+    }
+    .info-item img{
+        transform: translateX(20%);
+        margin-top: 15px;
+    }
+    .info-item{
+        margin: 5px;
+    }
+    .info-para{
+        margin-bottom: 10px;
+        
+    }
+    .info-img img {
+        width: 50px;
+    }
+    .info-home-content{
+        font-size: 12px;
+    }
+    .techinfo-item-one{
+        transform: translateX(10%);
+        font-size: 13px;
+    }
+    .techinfo-item-two{
+        transform: translateX(10%);
+        font-size: 13px;
+    }
+    .techinfo-item-three{
+        transform: translateX(10%);
+        font-size: 13px;
+    }
+    .techinfo-img{
+        margin: 10px;
+    }
+    .design-home{
+        font-size: 12px;
+    }
+    .filter-home-content{
+        font-size: 12px;
+        margin-bottom: 160px;
+    }
+    .tech-filter-item{
+        transform: translateX(10%);
+    }
+    .point-home-content{
+        font-size: 12px;
+        margin-top: 280px;
+        margin-bottom: 180px;
+    }
+    #end-point{
+        display: none;
+    }
+}
